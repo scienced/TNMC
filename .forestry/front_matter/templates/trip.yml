@@ -1,4 +1,6 @@
 ---
+pages:
+- trips/hiken-in-holland.md
 hide_body: false
 fields:
 - name: layout
