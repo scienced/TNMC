@@ -1,0 +1,44 @@
+<div class="subtitle">Favorieten van de maand</div>
+<div class="list-plekjes list-plekjes--flex" style="min-height: 0;">
+    
+{% assign trips = site.pages | where: "layout", "node" %}
+
+{% for noder in trips limit:6 %}
+          
+          <a class="list-plekjes__item" href="{{noder.url}}">
+    <span class="list-plekjes__image" style="background-image: url('{{noder.images.first}}');"></span>
+    <span class="list-plekjes__shadow"></span>
+    <span class="list-plekjes__overlay"></span>
+    <span class="list-plekjes__meta-details">
+        <span class="list-plekjes__meta-details-inner">
+            <span class="list-plekjes__meta-title">
+                {{noder.naam}}
+            </span>
+        </span>
+    </span>
+    <span class="list-plekjes__item-caption">
+        <span class="list-plekjes__meta-left">
+            {{noder.type}} <br>
+            {{noder.location}}
+        </span>
+        <span class="list-plekjes__meta-right">
+
+            
+                {{noder.price}}
+            
+
+            
+                <br>{{noder.people-capacity}}
+            
+
+            <br>
+        </span>
+
+
+        
+    </span>
+</a>
+
+        {% endfor %}
+    
+</div>

@@ -1,0 +1,287 @@
+---
+layout: node
+---
+
+{% include header.html %} 
+
+{% include nav.html %} 
+
+
+    <div class="header-slider" style="background-position: center center;background-size: cover;background-image: url('https://d8lop04o9q7e1.cloudfront.net/851/achtertuin_zicht_op_achterkant_huis__2017_slider.jpg');">
+    <div class="header-slider__aspect-ratio"></div>
+    <div class="header-slider__slider" id="headerSlider" >
+        <div data-u="loading" class="loading--image" style="position: absolute; top: 0px; left: 0px;"></div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:100%;height:100%;overflow:hidden;
+            " id="js-headerSlider-slides">
+            
+            
+            {% for image in page.images %}
+            <div class="header-slider__slide">
+                <img data-u="image"
+                     src2="{{image}}"
+                     data-description="hier komt een beschrijving"
+                     alt="hier komt een alt " />
+            </div>
+            {% endfor %}
+
+
+
+            
+            
+
+            
+        </div>
+    </div>
+    <div class="header-slider__content">
+        <div class="header-slider__hover-inner">
+            <div class="header-slider__content-wrap header-slider__content-wrap--hover">
+                <div class="header-slider__hover-title js-header-slider__hover-title"></div>
+                <div class="header-slider__hover-description js-header-slider__hover-description"></div>
+            </div>
+        </div>
+        <div class="inner-block header-slider__inner">
+            <div class="header-slider__content-wrap
+                        js-header-slider__meta">
+                <div id="pinHeaderImg" class="pin-it-button">Pin</div>
+
+
+                
+                <div class="header__prefix">Brotrip ontdekt</div>
+                
+                <h1 itemprop="name" class="header__title">
+                    {{ page.naam}}
+                </h1>
+                <div class="header__subtitle">
+                    {{ page.type}}
+                </div>
+            </div>
+        </div>
+        <span class="header-slider__arrow-left">
+            <svg width="12px" height="10px" class="header-slider__arrow-icon" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-61.000000, -394.000000)" class="header-slider__arrow-icon-fill">
+            <g transform="translate(-1047.000000, 1.000000)">
+                <g transform="translate(1092.000000, 376.000000)">
+                    <path d="M21.2257328,16.3979343 C21.2387328,16.3819343 21.2577328,16.3739343 21.2717328,16.3589343 C21.3430649,16.2718119 21.4298489,16.1985879 21.5277328,16.1429343 C21.6412452,16.0771183 21.7687148,16.039083 21.8997328,16.0319343 C21.9067328,16.0319343 21.9497328,16.0259343 21.9497328,16.0259343 C21.9657328,16.0259343 21.9797328,16.0159343 21.9957328,16.0159343 C22.0117777,16.0171401 22.0275868,16.0205037 22.0427328,16.0259343 C22.0537328,16.0259343 22.0637328,16.0259343 22.0747328,16.0319343 C22.0848349,16.0349843 22.0952221,16.0369948 22.1057328,16.0379343 C22.1939779,16.0412107 22.2811081,16.0587718 22.3637328,16.0899343 C22.3997328,16.1049343 22.4277328,16.1279343 22.4637328,16.1459343 C22.5330705,16.1808076 22.5976059,16.2245035 22.6557328,16.2759343 C22.686139,16.3097435 22.7138882,16.3458509 22.7387328,16.3839343 L26.5307328,18.9429343 C26.9973304,19.2989934 27.1436341,19.9371798 26.8787328,20.4609343 C26.7803565,20.7059233 26.5770755,20.8937221 26.3250763,20.9724234 C26.0730771,21.0511246 25.7990489,21.0123932 25.5787328,20.8669343 L22.9967328,19.1189343 L22.9967328,27.0099343 C22.9967328,27.5622191 22.5490175,28.0099343 21.9967328,28.0099343 C21.444448,28.0099343 20.9967328,27.5622191 20.9967328,27.0099343 L20.9967328,19.1189343 L18.4147328,20.8609343 C18.1943217,21.006016 17.9204389,21.0445326 17.6685622,20.9658696 C17.4166855,20.8872066 17.2134017,20.6996672 17.1147328,20.4549343 C16.8506751,19.9310771 16.9968497,19.2934533 17.4627328,18.9369343 L21.2257328,16.3979343 Z" transform="translate(21.997000, 22.012934) rotate(-90.000000) translate(-21.997000, -22.012934) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+
+        </span>
+        <span class="header-slider__arrow-right">
+
+            <svg width="12px" height="10px" class="header-slider__arrow-icon" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1373.000000, -394.000000)" class="header-slider__arrow-icon-fill">
+            <g transform="translate(-1047.000000, 1.000000)">
+                <g transform="translate(2426.000000, 398.000000) scale(-1, 1) translate(-2426.000000, -398.000000) translate(2404.000000, 376.000000)">
+                    <path d="M21.2257328,16.3979343 C21.2387328,16.3819343 21.2577328,16.3739343 21.2717328,16.3589343 C21.3430649,16.2718119 21.4298489,16.1985879 21.5277328,16.1429343 C21.6412452,16.0771183 21.7687148,16.039083 21.8997328,16.0319343 C21.9067328,16.0319343 21.9497328,16.0259343 21.9497328,16.0259343 C21.9657328,16.0259343 21.9797328,16.0159343 21.9957328,16.0159343 C22.0117777,16.0171401 22.0275868,16.0205037 22.0427328,16.0259343 C22.0537328,16.0259343 22.0637328,16.0259343 22.0747328,16.0319343 C22.0848349,16.0349843 22.0952221,16.0369948 22.1057328,16.0379343 C22.1939779,16.0412107 22.2811081,16.0587718 22.3637328,16.0899343 C22.3997328,16.1049343 22.4277328,16.1279343 22.4637328,16.1459343 C22.5330705,16.1808076 22.5976059,16.2245035 22.6557328,16.2759343 C22.686139,16.3097435 22.7138882,16.3458509 22.7387328,16.3839343 L26.5307328,18.9429343 C26.9973304,19.2989934 27.1436341,19.9371798 26.8787328,20.4609343 C26.7803565,20.7059233 26.5770755,20.8937221 26.3250763,20.9724234 C26.0730771,21.0511246 25.7990489,21.0123932 25.5787328,20.8669343 L22.9967328,19.1189343 L22.9967328,27.0099343 C22.9967328,27.5622191 22.5490175,28.0099343 21.9967328,28.0099343 C21.444448,28.0099343 20.9967328,27.5622191 20.9967328,27.0099343 L20.9967328,19.1189343 L18.4147328,20.8609343 C18.1943217,21.006016 17.9204389,21.0445326 17.6685622,20.9658696 C17.4166855,20.8872066 17.2134017,20.6996672 17.1147328,20.4549343 C16.8506751,19.9310771 16.9968497,19.2934533 17.4627328,18.9369343 L21.2257328,16.3979343 Z" transform="translate(21.997000, 22.012934) rotate(-90.000000) translate(-21.997000, -22.012934) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+
+        </span>
+    </div>
+</div>
+
+    <h1 class="h1--mobile mobile-only">{{ page.naam}}<br />{{ page.type}}</h1>
+
+
+    <div class="meta-data desktop-only" vocab="http://schema.org/" typeof="Offer">
+
+        {% for attri in page.key-attributes %}
+
+  
+        
+        <div class="meta-data__item">
+            <span class="meta-data__item-key">{{attri}}</span>
+            <span class="meta-data__item-value"></span>
+            
+        </div>
+
+        {% endfor %}
+        
+   
+        
+    </div>
+
+    <div class="meta-table">
+        <div class="meta-table__cell">
+
+            
+            {{ page.people-capacity}}
+            
+        </div>
+        <div class="meta-table__cell">
+            
+                {{ page.price}}
+            
+        </div>
+    </div>
+
+
+
+
+    <div class="buttons">
+        <button class="button button--secondary desktop-only"
+                data-module="drawer"
+                data-action="addReview"
+                data-value="recensies"
+                data-options='{"title": "Recensies", "path": "/plekje/2013_reactieform/lemelerlust"}'>Schrijf een recensie</button>
+        
+
+        
+        
+            
+            <a class="button button--secondary gtm-website-visit js-no-pjax" href="{{ page.website}}" target="_blank" rel="noopener">
+                Ga naar de website</a>
+
+            <a class="button button--primary gtm-availability-scroll js-no-pjax" href="#beschikbaarheidsForm">
+                Beschikbaarheid</a>
+        
+
+        
+    </div>
+
+<div class="article">
+    {{ content }}
+</div>
+
+
+    
+    <a name="beschikbaarheidsForm" class="anchor-offset"></a>
+    <div id="beschikbaarheidCta"></div>
+    <div id="beschikbaarheidCtaInit" class="beschikbaarheid-cta">
+        
+        <div class="beschikbaarheid-cta__title">
+            Wil je hier graag overnachten?
+        </div>
+        <div class="beschikbaarheid-cta__sub-title">
+            Vraag vrijblijvend de beschikbaarheid aan.
+        </div>
+        
+
+        <input type="hidden" id="quickAvailabilityTitle" value="LemelerLust">
+        <input class="input input--inline input--date"
+               type="text"
+               name="date1"
+               id="quickAvailabilityStart"
+               value=""
+               placeholder="Van">
+        <input class="input input--inline input--date"
+               type="text"
+               name="date2"
+               id="quickAvailabilityEnd"
+               value=""
+               placeholder="Tot">
+        <input class="input input--inline"
+               type="text"
+               name="people"
+               id="quickAvailabilityPeople"
+               value=""
+               placeholder="Personen">
+
+        <br>
+        <br>
+
+        <button class="button button--primary"
+                data-module="plekje"
+                data-action="open"
+                data-value="beschikbaarheid"
+                data-options='{"title": "Beschikbaarheid", "path": "/plekje/2013_mailform/lemelerlust"}'
+                data-ajax-class="ajax-beschikbaarheid">
+            Beschikbaarheid
+        </button>
+    </div>
+    
+
+
+    <div class="buttons">
+        <button class="button button--secondary desktop-only"
+                data-module="drawer"
+                data-action="addReview"
+                data-value="recensies"
+                data-options='{"title": "Recensies", "path": "/plekje/2013_reactieform/lemelerlust"}'>Schrijf een recensie</button>
+        
+
+        
+        
+        
+        <a class="button button--primary gtm-website-visit js-no-pjax" href="{{ page.website}}" target="_blank" rel="noopener">
+            Ga naar de website</a>
+
+        
+
+        
+    </div>
+
+    
+
+    <br>
+    <div class="global-share-buttons">
+        <div class="global-share-buttons__p">Iemand anders blij maken met dit adres? Deel dit plekje met je familie en vrienden.</div>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.bijzonderplekje.nl/vakantie-nederland/lemelerlust"
+           class="gtm-share gtm-share-facebook big-share-btn btn-facebook js-no-pjax" target="_blank" rel="noopener" onclick="window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=350,width=475');return false;">
+            <span class="typcn typcn-social-facebook"></span>
+            <span class="btn-divider"></span>
+            Deel op Facebook
+        </a>
+        <a href="https://twitter.com/share?&amp;url=https://www.bijzonderplekje.nl/vakantie-nederland/lemelerlust&amp;via=BijzonderPlekje"
+           class="gtm-share gtm-share-twitter big-share-btn btn-twitter js-no-pjax" target="_blank" rel="noopener" onclick="window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=350,width=475');return false;">
+            <span class="typcn typcn-social-twitter"></span>
+            <span class="btn-divider"></span>
+            Deel op Twitter
+        </a>
+    </div>
+    <br>
+
+
+    
+
+
+
+    <br>
+
+    <div class="meta-data mobile-only" vocab="http://schema.org/" typeof="Offer">
+
+        {% for attri in page.key-attributes %}
+        
+        <div class="meta-data__item">
+            <span class="meta-data__item-key">{{attri}}</span>
+            <span class="meta-data__item-value"></span>
+        </div>
+        {% endfor %}
+        
+    
+        
+    </div>
+
+    <div class="subtitle subtitle--line">Thema's uit dit plekje</div>
+    <div class="tags">
+
+        {%for theme in page.themes %}
+             <a class="tags__item" href="../{{theme}}.html">
+            {{theme}}
+        </a>
+        {% endfor %}
+
+        
+        
+
+    </div>
+
+
+    
+
+    {% include ookleuk.html %} 
+
+
+
+    {% include footer.html %}
+
+  
+<!--Cached with Static Page Caching-->
