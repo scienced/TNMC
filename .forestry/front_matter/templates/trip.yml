@@ -4,35 +4,41 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
-- name: title
-  label: Title
-  type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: node
 - name: date
   label: Date
   type: datetime
-  hidden: false
-  default: ''
+  hidden: true
+  default: Invalid date
 - name: naam
-  label: Naam
+  label: Trip name
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
+- name: type
+  label: Trip type
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
 - name: meta-title
-  label: Meta title
+  label: Meta name (can be longer)
   type: text
   hidden: false
   default: ''
+- name: title
+  label: Page title (for seo)
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
 - name: location
   label: Location
-  type: text
-  hidden: false
-  default: ''
-- name: type
-  label: Type
   type: text
   hidden: false
   default: ''
@@ -42,7 +48,7 @@ fields:
   hidden: false
   default: ''
 - name: key-attributes
-  label: Key attributes
+  label: Key attributes of the trip
   type: list
   hidden: false
   default: ''
@@ -52,17 +58,15 @@ fields:
   hidden: false
   default: ''
 - name: website
-  label: Website
+  label: Website to partner
   type: text
   hidden: false
   default: ''
 - name: themes
-  label: Themes
+  label: Themes or tags
   type: list
   hidden: false
   default: ''
-- name: images
+- type: image_gallery
   label: Images
-  type: list
-  hidden: false
-  default: ''
+  name: images
