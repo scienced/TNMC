@@ -1,0 +1,68 @@
+---
+hide_body: false
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: naam
+  label: Naam
+  type: text
+  hidden: false
+  default: ''
+- name: meta-title
+  label: Meta title
+  type: text
+  hidden: false
+  default: ''
+- name: location
+  label: Location
+  type: text
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: ''
+- name: price
+  label: Price
+  type: text
+  hidden: false
+  default: ''
+- name: key-attributes
+  label: Key attributes
+  type: list
+  hidden: false
+  default: ''
+- name: people-capacity
+  label: People capacity
+  type: text
+  hidden: false
+  default: ''
+- name: website
+  label: Website
+  type: text
+  hidden: false
+  default: ''
+- name: themes
+  label: Themes
+  type: list
+  hidden: false
+  default: ''
+- name: images
+  label: Images
+  type: list
+  hidden: false
+  default: ''
