@@ -2,7 +2,7 @@
 title: Together with Wim Hof and WHM Instructors – Conquering the cold in Poland
 layout: node
 date: 2018-03-24 00:00:00 +0000
-naam: Together with Wim Hof and WHM Instructors – Conquering the cold in Poland
+naam: Conquering the cold in Poland together with Wim Hof!
 location: Poland
 key-attributes:
 - Challenge
@@ -24,7 +24,7 @@ images:
 - "/uploads/2018/03/24/mg-6578.jpg"
 price: Not available at the moment
 type: Physical and Mental Challenge (Wim Hof the Iceman)
-meta-title: ''
+meta-title: Together with Wim Hof and WHM Instructors – Conquering the cold in Poland
 ---
 # Together with Wim Hof and WHM Instructors – Conquering the cold in Poland 
 
