@@ -15,7 +15,7 @@ fields:
   hidden: true
   default: Invalid date
 - name: naam
-  label: Trip name
+  label: Trip name (very short)
   type: text
   hidden: false
   default: ''
@@ -31,7 +31,7 @@ fields:
 - name: meta-title
   label: Meta name (can be longer)
   type: text
-  hidden: false
+  hidden: true
   default: ''
 - name: title
   label: Page title (for seo)
@@ -46,17 +46,20 @@ fields:
   hidden: false
   default: ''
 - name: price
-  label: Price
+  label: Price (descriptive)
   type: text
   hidden: false
   default: ''
+- type: number
+  name: price_number
+  label: Price (number)
 - name: key-attributes
-  label: Key attributes of the trip
+  label: Key attributes (descriptive)
   type: list
   hidden: false
   default: ''
 - name: people-capacity
-  label: People capacity
+  label: People capacity (descriptive)
   type: text
   hidden: false
   default: ''
@@ -66,7 +69,7 @@ fields:
   hidden: false
   default: ''
 - name: themes
-  label: Themes or tags
+  label: Themes (tags)
   type: list
   hidden: false
   default: ''
