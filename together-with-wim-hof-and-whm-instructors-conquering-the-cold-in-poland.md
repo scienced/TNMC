@@ -15,9 +15,9 @@ themes:
 - 'Cold '
 people-capacity: 1 - 20 people
 images:
+- "/uploads/2018/03/24/05-van-wimhof-site-zelf-540x297.jpg"
 - "/uploads/2018/03/24/mg-6578.jpg"
 - "/uploads/2018/03/24/59c3ba4961ad3.jpg"
-- "/uploads/2018/03/24/05-van-wimhof-site-zelf-540x297.jpg"
 - "/uploads/2018/03/24/maxresdefault.jpg"
 price: starting at $500 per week
 type: Training week
