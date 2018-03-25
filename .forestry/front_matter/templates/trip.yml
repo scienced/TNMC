@@ -47,13 +47,13 @@ fields:
   hidden: false
   default: ''
 - name: price
-  label: Price (descriptive)
+  label: Price (descriptive) $
   type: text
   hidden: false
   default: ''
 - type: number
   name: price_number
-  label: Price (number)
+  label: Price (number) $
 - name: key-attributes
   label: Key attributes (descriptive)
   type: list
