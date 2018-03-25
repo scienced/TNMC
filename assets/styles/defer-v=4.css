@@ -7071,7 +7071,7 @@ a.ui-button:active,
 }
 
 .filters__filter-group--region {
-    width: 100%;
+    width: 230px;
     padding-bottom: 10px;
     position: relative
 }
