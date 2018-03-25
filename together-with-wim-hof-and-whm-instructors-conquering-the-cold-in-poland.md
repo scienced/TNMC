@@ -22,7 +22,7 @@ images:
 price: starting at $500 per week
 type: Training week
 meta-title: Together with Wim Hof and WHM Instructors – Conquering the cold in Poland
-price_number: ''
+price_number: 500
 ---
 Wim Hof is known nationally and internationally for constantly breaking his records in the cold. Wim has shown what the human body is more capable of once you find the flow within your physical and mental state. 
 
