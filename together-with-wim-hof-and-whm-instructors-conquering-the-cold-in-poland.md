@@ -2,20 +2,17 @@
 title: Together with Wim Hof and WHM Instructors – Conquering the cold in Poland
 layout: node
 date: 2018-03-24 00:00:00 +0000
-naam: Wim Hof
+naam: Wim Hof Expedition
 location: Poland
 key-attributes:
-- No WIFI included
-- 'Difficulty level: high'
+- 'Style: Back to Nature'
+- 'Difficulty level: High'
 - Personally tested
-- ''
 website: http://www.icemanwimhof.com/wintertravel
 themes:
-- traning
 - Wim hof
-- whm
-- challenge
-- 'cold '
+- Challenge
+- 'Cold '
 people-capacity: 1 - 20 people
 images:
 - "/uploads/2018/03/24/mg-6578.jpg"
@@ -23,8 +20,9 @@ images:
 - "/uploads/2018/03/24/05-van-wimhof-site-zelf-540x297.jpg"
 - "/uploads/2018/03/24/maxresdefault.jpg"
 price: starting at $500 per week
-type: Conquering the cold in Poland
+type: Training week
 meta-title: Together with Wim Hof and WHM Instructors – Conquering the cold in Poland
+price_number: ''
 ---
 Wim Hof is known nationally and internationally for constantly breaking his records in the cold. Wim has shown what the human body is more capable of once you find the flow within your physical and mental state. 
 
