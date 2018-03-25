@@ -1,7 +1,7 @@
 <div class="subtitle">Favorieten van de maand</div>
 <div class="list-plekjes list-plekjes--flex" style="min-height: 0;">
     
-{% assign trips = site.pages | where: "layout", "node" | sort: 'date' %}
+{% assign trips = site.pages | where: "layout", "node" | sort: 'date' | reverse %}
 
 {% for noder in trips limit:6 %}
           
