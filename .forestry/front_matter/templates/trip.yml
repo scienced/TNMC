@@ -1,0 +1,80 @@
+---
+pages:
+- trips/whiskey.md
+- trips/great-wall-marathon.md
+- together-with-wim-hof-and-whm-instructors-conquering-the-cold-in-poland.md
+- trips/hiken-in-holland.md
+hide_body: false
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: node
+- name: date
+  label: Date
+  type: datetime
+  hidden: true
+  default: Invalid date
+- name: naam
+  label: Trip name (very short)
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- name: type
+  label: Trip type
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- name: meta-title
+  label: Meta name (can be longer)
+  type: text
+  hidden: true
+  default: ''
+- name: title
+  label: Page title (for seo)
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- name: location
+  label: Location
+  type: text
+  hidden: false
+  default: ''
+- name: price
+  label: Price (descriptive) $
+  type: text
+  hidden: false
+  default: ''
+- type: number
+  name: price_number
+  label: Price (number) $
+- name: key-attributes
+  label: Key attributes (descriptive)
+  type: list
+  hidden: false
+  default: ''
+- name: people-capacity
+  label: People capacity (descriptive)
+  type: text
+  hidden: false
+  default: ''
+- name: website
+  label: Website to partner
+  type: text
+  hidden: false
+  default: ''
+- name: themes
+  label: Themes (tags)
+  type: list
+  hidden: false
+  default: ''
+- type: image_gallery
+  label: Images
+  name: images
