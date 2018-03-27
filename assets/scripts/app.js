@@ -9,7 +9,17 @@ var search = instantsearch({
   }
 });
 
-
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#categories',
+    attributeName: 'categories',
+    operator: 'or',
+    limit: 10,
+    templates: {
+      header: 'Brands'
+    }
+  })
+);
 
 
 search.addWidget(
@@ -42,6 +52,22 @@ search.addWidget(
   })
 );
 
+search.addWidget(
+  instantsearch.widgets.menuSelect({
+    container: '#free_shipping-menuSelect',
+    attributeName: 'free_shipping',
+    limit: 20,
+    cssClasses: {
+      select: ['select-dropdown__select', 'select-dropdown'],
+      root: ['filters__filter-group', 'filters__filter-group--region'],
+    },
+    templates: {
+      seeAllOption: 'Free Shipping?'
+    }
+  })
+);
+
+
 
   // initialize clearAll
   search.addWidget(
@@ -67,13 +93,24 @@ search.addWidget(
     templates: {
       item: document.getElementById('hit-template').innerHTML,
       empty: "We didn't find any results for the search <em>\"{{query}}\"</em>"
-    }
+    },
+    cssClasses: {
+      item: 'list-plekjes__item',
+      root: ['list-plekjes', 'list-plekjes--flex'],
+    },
   })
 );
 
+
+
 search.addWidget(
-  instantsearch.widgets.pagination({
-    container: '#pagination'
+  instantsearch.widgets.stats({
+    container: '#stats-container',
+    templates: {
+            body: function(data) {
+                return data.nbHits + ' Overnachtingen'
+            }
+        }
   })
 );
 
